@@ -19,7 +19,7 @@ Installation is pretty simple, just clone this repository and run the `bootstrap
 ```shell
 git clone https://github.com/Dan7n/dotfiles.git ~/.dotfiles
 cd ~/.dotfiles
-zsh ./install/bootstrap.sh
+bash ./install/bootstrap.sh
 ```
 
 What the `bootstrap.sh` script does is simlinking the configuration files to the directories where the applications expect them to be (that's defined in the `links.prop` file inside each configuration folder). This ensures that the configuration files remain under version control and can still do their job from where the applications expect them to be.
