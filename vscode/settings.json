@@ -1,0 +1,91 @@
+{
+  "workbench.colorTheme": "Nord Dark",
+  "terminal.integrated.env.osx": {},
+  "workbench.colorCustomizations": {
+    "editor.lineHighlightBackground": "#1073cf2d",
+    "editor.lineHighlightBorder": "#9fced11f"
+  },
+  "editor.wordWrap": "off",
+  "diffEditor.wordWrap": "off",
+  "editor.guides.indentation": false,
+  "editor.guides.bracketPairs": false,
+  "editor.inlineSuggest.enabled": true,
+  "editor.fontFamily": "'Monaspace Neon', Fira Code, Menlo, Monaco, 'Courier New', monospace",
+  "editor.fontLigatures": true,
+  "editor.fontSize": 13,
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false,
+    "markdown": true,
+    "scminput": false,
+    "rust": false,
+    "javascriptreact": false,
+    "typescript": false,
+    "javascript": true,
+    "typescriptreact": false,
+    "shellscript": true,
+    "php": true,
+    "astro": true,
+    "go": true,
+    "html": false,
+    "json": false,
+    "css": true
+  },
+  "[typescript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[typescriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true,
+  "cSpell.userWords": [
+    "Followee",
+    "followees",
+    "Gloos",
+    "kdpc",
+    "klarna",
+    "KPDC",
+    "Krns",
+    "mappersmith"
+  ],
+  "terminal.integrated.fontSize": 12,
+  "terminal.integrated.fontFamily": "'Monaspace Neon', Mononoki Nerd Font",
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "yaml.schemas": {
+    "file:///Users/danny.isaac/.vscode/extensions/atlassian.atlascode-3.0.10/resources/schemas/pipelines-schema.json": "bitbucket-pipelines.yml",
+    "file:///Users/danny.isaac/.vscode/extensions/docsmsft.docs-yaml-1.0.4/dist/toc.schema.json": "/toc\\.yml/i"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "console-ninja.featureSet": "Community",
+  "nxConsole.showNodeVersionOnStartup": false,
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "svelte.enable-ts-plugin": true,
+  "prisma.showPrismaDataPlatformNotification": false,
+  "animations.Install-Method": "Apc Customize UI++",
+  "github.copilot.editor.enableAutoCompletions": true,
+  "apc.imports": [
+    "file://${userHome}/.vscode/extensions/brandonkirbyson.vscode-animations-2.0.3/dist/updateHandler.js"
+  ],
+  "atlascode.jira.jqlList": [
+    {
+      "id": "b415baa5-be88-43c5-b81d-b2401ce086ea",
+      "enabled": true,
+      "name": "My klarna Issues",
+      "query": "assignee = currentUser() AND resolution = Unresolved ORDER BY lastViewed DESC",
+      "siteId": "4edb0f2e-c3dc-4eef-ba74-c265c8642cc4",
+      "monitor": true
+    }
+  ]
+}

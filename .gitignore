@@ -1,0 +1,9 @@
+**.DS_Store
+vim/bundle
+vim/pack/minpac/start
+**.netrwhist
+*.swp
+job-specific.sh
+scripts/dark-mode-notify
+bin/format-transactions.js
+**/node_modules
