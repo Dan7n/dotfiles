@@ -9,6 +9,7 @@ return {
       "nvim-telescope/telescope.nvim", -- optional
       -- "ibhagwan/fzf-lua", -- optional
     },
+    vim.keymap.set("n", "<leader>gt", ":Neogit<CR>", { desc = "Start Neogit (leader GiT)" }),
     config = true,
   },
   {
