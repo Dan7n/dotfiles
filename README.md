@@ -10,20 +10,18 @@
 Simple repository to store the configuration files I use for my development environment/workflow.
 Some of the configurations here are based on other repositories, others are my own. Feel free to fork this repository or copy/paste anything you find useful.
 
-If you want to learn more about the structure of this repository and how everything works together, check out [this article](https://shaky.sh/simple-dotfiles/) by [Andrew Burgess](https://www.youtube.com/@andrew-burgess)
+This repository uses the incredibly useful open source symlink farm manager [GNU Stow](https://www.gnu.org/software/stow/) to create symlinks between the config files/directories located in this repository and where the applications that use these config files expect them to be in the filesystem. The benefit of symlinking files this way is that any changes you make to the config file - be it here in this repository or where the config file is linked to in the filesystem - will be reflected here. So you'll always have one source of truth that you can version-control in Git and keep up to date.
 
 ## Installation
 
-Installation is pretty simple, just clone this repository and run the `bootstrap.sh` script.
+First off, you'll need to install GNU Stow on your system. If you're on MacOS, you can use Homebrew:
 
-```shell
-git clone https://github.com/Dan7n/dotfiles.git ~/.dotfiles
-cd ~/.dotfiles
-bash ./install/bootstrap.sh
+```bash
+brew install stow
 ```
 
-What the `bootstrap.sh` script does is simlinking the configuration files to the directories where the applications expect them to be (that's defined in the `links.prop` file inside each configuration folder). This ensures that the configuration files remain under version control and can still do their job from where the applications expect them to be.
+Next you can simply use the `stow` command followed by the name of the directories that contain the config files.
 
-## Local ZSH Config
-
-If there's customization you want ZSH to load on startup that is specific to this machine (stuff you don't want to commit into the repo), create ~/.env.sh and put it in there. It will be loaded near the top of .zshrc.
+```bash
+stow kitty nvim skhd tmux vim wezterm zsh
+```
