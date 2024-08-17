@@ -1,13 +1,13 @@
 ADMIN_USER="dannyisaac"
 alias be-productive="python3 /Users/$ADMIN_USER/Documents/Code/_personal/prod-faker-main/prod-faker.py"
 # alias fcd="cd $(find . -type d -print | fzf)" # fuzzy find with cd
-eval "$(oh-my-posh init zsh --config /Users/$ADMIN_USER/.oh-my-posh-config/themes/catppuccin_frappe.omp.json)"
+# eval "$(oh-my-posh init zsh --config /Users/$ADMIN_USER/.oh-my-posh-config/themes/catppuccin_frappe.omp.json)"
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 eval "$(thefuck --alias)" # set "fuck" as the alias to thefuck CLI tool which auto-fixes your last command
 
 # bun completions
-[ -s "/Users/$ADMIN_USER/.bun/_bun" ] && source "/Users/$ADMIN_USER/.bun/_bun"
+# [ -s "/Users/$ADMIN_USER/.bun/_bun" ] && source "/Users/$ADMIN_USER/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
