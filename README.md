@@ -20,6 +20,13 @@ First off, you'll need to install GNU Stow on your system. If you're on MacOS, y
 brew install stow
 ```
 
+Now clone this respotory to your home directory and `cd` into it:
+
+```bash
+git clone https://github.com/Dan7n/dotfiles.git ~/.dotfiles
+cd ~/.dotfiles
+```
+
 Next you can simply use the `stow` command followed by the name of the directories that contain the config files.
 
 ```bash
