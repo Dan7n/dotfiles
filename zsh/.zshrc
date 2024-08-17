@@ -1,72 +1,17 @@
-alias be-productive="python3 /Users/danny.isaac/Documents/Code/_personal/prod-faker-main/prod-faker.py"
+ADMIN_USER="dannyisaac"
+alias be-productive="python3 /Users/$ADMIN_USER/Documents/Code/_personal/prod-faker-main/prod-faker.py"
 # alias fcd="cd $(find . -type d -print | fzf)" # fuzzy find with cd
-eval "$(oh-my-posh init zsh --config /Users/danny.isaac/.oh-my-posh-config/themes/catppuccin_frappe.omp.json)"
+eval "$(oh-my-posh init zsh --config /Users/$ADMIN_USER/.oh-my-posh-config/themes/catppuccin_frappe.omp.json)"
 eval "$(zoxide init zsh)"
 source <(fzf --zsh)
 eval "$(thefuck --alias)" # set "fuck" as the alias to thefuck CLI tool which auto-fixes your last command
 
 # bun completions
-[ -s "/Users/danny.isaac/.bun/_bun" ] && source "/Users/danny.isaac/.bun/_bun"
+[ -s "/Users/$ADMIN_USER/.bun/_bun" ] && source "/Users/$ADMIN_USER/.bun/_bun"
 
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
-###-begin-grond-completions-###
-#
-# yargs command completion script
-#
-# Installation: grond completion >> ~/.zshrc
-#    or grond completion >> ~/.zsh_profile on OSX.
-#
-_grond_yargs_completions()
-{
-  local reply
-  local si=$IFS
-  IFS=$'
-' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" grond --get-yargs-completions "${words[@]}"))
-  IFS=$si
-  _describe 'values' reply
-}
-compdef _grond_yargs_completions grond
-###-end-grond-completions-###
-
-###-begin-grond-completions-###
-#
-# yargs command completion script
-#
-# Installation: /opt/homebrew/bin/grond completion >> ~/.zshrc
-#    or /opt/homebrew/bin/grond completion >> ~/.zsh_profile on OSX.
-#
-_grond_yargs_completions()
-{
-  local reply
-  local si=$IFS
-  IFS=$'
-' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" /opt/homebrew/bin/grond --get-yargs-completions "${words[@]}"))
-  IFS=$si
-  _describe 'values' reply
-}
-compdef _grond_yargs_completions grond
-###-end-grond-completions-###
-
-###-begin-grond-completions-###
-#
-# yargs command completion script
-#
-# Installation: /opt/homebrew/bin/grond completion >> ~/.zshrc
-#    or /opt/homebrew/bin/grond completion >> ~/.zsh_profile on OSX.
-#
-_grond_yargs_completions()
-{
-  local reply
-  local si=$IFS
-  IFS=$'
-' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" /opt/homebrew/bin/grond --get-yargs-completions "${words[@]}"))
-  IFS=$si
-  _describe 'values' reply
-}
-compdef _grond_yargs_completions grond
-###-end-grond-completions-###
 
 export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
@@ -97,24 +42,6 @@ PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
 
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
-###-begin-grond-completions-###
-#
-# yargs command completion script
-#
-# Installation: /opt/homebrew/bin/grond completion >> ~/.zshrc
-#    or /opt/homebrew/bin/grond completion >> ~/.zsh_profile on OSX.
-#
-_grond_yargs_completions()
-{
-  local reply
-  local si=$IFS
-  IFS=$'
-' reply=($(COMP_CWORD="$((CURRENT-1))" COMP_LINE="$BUFFER" COMP_POINT="$CURSOR" /opt/homebrew/bin/grond --get-yargs-completions "${words[@]}"))
-  IFS=$si
-  _describe 'values' reply
-}
-compdef _grond_yargs_completions grond
-###-end-grond-completions-###
 
 # =============================================================================
 #
