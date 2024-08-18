@@ -1,5 +1,5 @@
 
-import = ["~/.config/alacritty/catppuccin/catppuccin-mocha.yml"]
+import = ["~/.config/alacritty/themes/tokyo-night/tokyo-night-theme.toml", "~/.config/alacritty/fonts/JetBrainsMono.toml"]
 live_config_reload = true
 
 [colors]
@@ -13,23 +13,7 @@ unfocused_hollow = true
 TERM = "xterm-256color"
 
 [font]
-size = 14.5
-
-[font.bold]
-family = "MonoLisaVariable Nerd Font"
-style = "Bold"
-
-[font.bold_italic]
-family = "MonoLisaVariable Nerd Font"
-style = "Bold Italic"
-
-[font.italic]
-family = "MonoLisaScript Nerd Font"
-style = "Italic"
-
-[font.normal]
-family = "MonoLisaVariable Nerd Font"
-style = "Regular"
+size = 13
 
 [[keyboard.bindings]]
 action = "SpawnNewInstance"
@@ -52,7 +36,7 @@ key = "F"
 mods = "Command|Control"
 
 [scrolling]
-history = 10000
+history = 100000
 multiplier = 10
 
 [selection]
@@ -60,9 +44,9 @@ save_to_clipboard = true
 semantic_escape_chars = "|:\"' {}()[]<>"
 
 [window]
-decorations = "none"
-opacity = 1.0
-
-[window.padding]
-x = 5
-y = 5
+padding.x = 16
+padding.y = 48
+decorations = "transparent"
+opacity = 0.99
+dimensions.columns = 90
+dimensions.lines = 30
