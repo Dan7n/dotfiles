@@ -27,6 +27,7 @@ alias git-log='git log --all --decorate --oneline --graph'
 alias c='clear'
 
 alias cd='z' # replace the native cd command with zoxide which offers caching and fzf integration 
+alias ls="eza --icons=always --color=always" # replaces ls with eza, which is a better version
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
