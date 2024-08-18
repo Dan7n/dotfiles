@@ -1,8 +1,10 @@
+source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh # loads the zsh-autosuggestions plugin - https://github.com/zsh-users/zsh-autosuggestions/tree/master
+source <(fzf --zsh)
+
 ADMIN_USER="dannyisaac"
 alias be-productive="python3 /Users/$ADMIN_USER/Documents/Code/_personal/prod-faker-main/prod-faker.py"
 eval "$(oh-my-posh init zsh --config /Users/$ADMIN_USER/.oh-my-posh-config/themes/catppuccin_frappe.omp.json)"
 eval "$(zoxide init zsh)"
-source <(fzf --zsh)
 eval "$(thefuck --alias)" # set "fuck" as the alias to thefuck CLI tool which auto-fixes your last command
 
 # bun completions
