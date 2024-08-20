@@ -2,7 +2,7 @@ source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh # loads the zsh-autosu
 source <(fzf --zsh)
 
 ADMIN_USER="dannyisaac"
-alias be-productive="python3 /Users/$ADMIN_USER/Documents/Code/_personal/prod-faker-main/prod-faker.py"
+alias be-productive="my-venv/bin/python3 $HOME/Code/Personal/productivity/prod-faker.py"
 eval "$(oh-my-posh init zsh --config /Users/$ADMIN_USER/.oh-my-posh-config/themes/catppuccin_frappe.omp.json)"
 eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)" # set "fuck" as the alias to thefuck CLI tool which auto-fixes your last command
@@ -27,7 +27,7 @@ alias git-log='git log --all --decorate --oneline --graph'
 alias c='clear'
 
 alias cd='z' # replace the native cd command with zoxide which offers caching and fzf integration 
-alias ls="eza --icons=always --color=always" # replaces ls with eza, which is a better version
+alias ls="eza --icons=always --long --color=always" # replaces ls with eza, which is a better version
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
