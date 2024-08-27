@@ -4,6 +4,7 @@ return {
     name = "catppuccin",
     opts = {
       dim_inactive = { enabled = true, percentage = 0.25 },
+      transparent_background = true,
       highlight_overrides = {
         mocha = function(c)
           return {
