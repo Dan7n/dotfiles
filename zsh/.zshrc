@@ -178,3 +178,6 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+export CHEAT_CONFIG_PATH="~/.config/cheat/conf.yml"
+export CHEAT_USE_FZF=true
