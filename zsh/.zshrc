@@ -3,7 +3,7 @@ source <(fzf --zsh)
 
 ADMIN_USER="dannyisaac"
 alias be-productive="source $HOME/Code/Personal/productivity/productivity-env/bin/activate && python3 $HOME/Code/Personal/productivity/prod-faker.py"
-eval "$(oh-my-posh init zsh --config /Users/$ADMIN_USER/.oh-my-posh-config/themes/catppuccin_frappe.omp.json)"
+eval "$(oh-my-posh init zsh --config /Users/$ADMIN_USER/.oh-my-posh-config/themes/peru.omp.json)"
 eval "$(zoxide init zsh)"
 eval "$(thefuck --alias)" # set "fuck" as the alias to thefuck CLI tool which auto-fixes your last command
 
@@ -104,6 +104,14 @@ function __zoxide_zi() {
 }
 
 # =============================================================================
+# Cheatsheets
+
+alias tmux-kb="bat ~/cheatsheets/tmux/keybindings.md" 
+
+
+# =============================================================================
+
+# =============================================================================
 #
 # Commands for zoxide. Disable these using --no-cmd.
 #
@@ -162,3 +170,11 @@ fi
 export NVM_DIR="$HOME/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# pnpm
+export PNPM_HOME="/Users/dannyisaac/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
