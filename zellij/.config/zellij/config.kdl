@@ -3,6 +3,14 @@ keybinds {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
+
+        // bind "Alt s" to open monocle on top of the current pane and open any results on top of itself
+        bind "Ctrl s" {
+            LaunchOrFocusPlugin "file:~/.config/zellij/plugins/monocle.wasm" {
+                floating true
+            };
+            SwitchToMode "Normal"
+        }
     }
     locked {
         bind "Ctrl g" { SwitchToMode "Normal"; }

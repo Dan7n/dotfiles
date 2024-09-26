@@ -31,7 +31,7 @@ alias ls="eza --icons=always --long --color=always" # replaces ls with eza, whic
 alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
-alias z="zellij"
+alias zz="zellij"
 
 function fh() {
     eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
