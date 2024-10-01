@@ -14,5 +14,5 @@ macos_show_window_title_in         none
 macos_custom_beam_cursor           yes
 term xterm-256color
 
-# Nightfox
+# Dracula
 include current-theme.conf
