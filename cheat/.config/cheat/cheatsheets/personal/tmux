@@ -2,7 +2,7 @@
 tmux
 
 # To detach from tmux:
-Ctrl-b d
+Ctrl-Space d
 
 # To restore tmux session:
 tmux attach
@@ -14,42 +14,51 @@ tmux attach -d
 tmux ls
 
 # To rename session:
-Ctrl-b $
+Ctrl-Space $
 
 # To switch session:
-Ctrl-b s
+Ctrl-Space s
 
 # To start a shared session:
 tmux -S /tmp/your_shared_session
 chmod 777 /tmp/your_shared_session
 
 # To help screen (Q to quit):
-Ctrl-b ?
+Ctrl-Space ?
 
 # To scroll in window:
-Ctrl-b PageUp/PageDown
+Ctrl-Space PageUp/PageDown
 
 # To reload configuration file
-Ctrl-b : source-file /path/to/file
+Ctrl-Space : source-file /path/to/file
 
 # To create a window:
-Ctrl-b c
+Ctrl-Space c
 
 # To go next window:
-Ctrl-b n
+Ctrl-Space n
 
 # To destroy a window:
-Ctrl-b x
+Ctrl-Space x
 
 # To switch between windows:
-Ctrl-b [0-9]
-Ctrl-b Arrows
+Ctrl-Space [0-9]
+Ctrl-Space Arrows
 
 # To split windows horizontally:
-Ctrl-b %
+Ctrl-Space %
 
 # To split windows vertically:
-Ctrl-b "
+Ctrl-Space "
 
 # To swap windows:
-Ctrl-b :swap-window -s [0-9] -t [0-9]
+Ctrl-Space :swap-window -s [0-9] -t [0-9]
+
+## My custom plugins
+
+
+# To open a quick-fix list of all URLs visible in the current pane
+Ctrl-Space u
+
+# quickly select, copy/insert/complete text without a mouse
+Ctrl-Space Tab
