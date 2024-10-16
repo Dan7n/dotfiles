@@ -184,4 +184,7 @@ export CHEAT_CONFIG_PATH="~/.config/cheat/conf.yml"
 export CHEAT_USE_FZF=true
 export XDG_CONFIG_HOME="$HOME/.config" # change default config dir for lazygit
 
+export EDITOR=nvim
+export VISUAL=nvim
+
 neofetch
