@@ -202,4 +202,5 @@ return {
       }
     end,
   },
+  { "spaceduck-theme/nvim", name = "spaceduck" },
 }
