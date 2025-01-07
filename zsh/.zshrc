@@ -1,3 +1,9 @@
+# Add deno completions to search path
+if [[ ":$FPATH:" != *":/Users/dannyisaac/.zsh/completions:"* ]]; then export FPATH="/Users/dannyisaac/.zsh/completions:$FPATH"; fi
+export LANG=en_US.UTF-8
+
+eval "$('/opt/homebrew/bin/brew' shellenv)"
+
 source ~/.zsh/zsh-autosuggestions/zsh-autosuggestions.zsh # loads the zsh-autosuggestions plugin - https://github.com/zsh-users/zsh-autosuggestions/tree/master
 source <(fzf --zsh)
 
@@ -18,6 +24,7 @@ export VOLTA_HOME="$HOME/.volta"
 export PATH="$VOLTA_HOME/bin:$PATH"
 
 PATH=~/.console-ninja/.bin:$PATH
+export DOCKER_HOST=' '
 
 alias src='source ~/.zshrc'
 alias int='nvim $(fzf --preview="bat --color=always {}")' # fuzzy find and open file with nvim
@@ -25,6 +32,7 @@ alias cint='code $(fzf --preview="bat --color=always {}")' # fuzzy find and open
 alias hist='echo $(history 1 | cut -c 8- | fzf)'
 alias git-log='git log --all --decorate --oneline --graph'
 alias c='clear'
+alias deno='/Users/dannyisaac/.deno/bin/deno'
 
 alias cd='z' # replace the native cd command with zoxide which offers caching and fzf integration 
 alias ls="eza --icons=always --long --color=always" # replaces ls with eza, which is a better version
@@ -40,8 +48,10 @@ alias fh=fh
 
 alias docker-compose='docker compose'
 
-GOPATH=$HOME/go
-PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+# PATH=$PATH:/usr/local/go/bin:$GOPATH/bin
+
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
 
 export LC_ALL=en_US.UTF-8
 export LC_CTYPE=en_US.UTF-8
@@ -187,4 +197,7 @@ export XDG_CONFIG_HOME="$HOME/.config" # change default config dir for lazygit
 export EDITOR=nvim
 export VISUAL=nvim
 
-neofetch
+source ~/.keprc
+. "/Users/dannyisaac/.deno/env"
+
+fastfetch
