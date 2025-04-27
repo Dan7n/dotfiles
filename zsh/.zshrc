@@ -40,6 +40,7 @@ alias ..="cd .."
 alias ...="cd ../.."
 alias ....="cd ../../.."
 alias zz="zellij"
+alias docker-stop-all="docker stop $(docker ps -a -q)"
 
 function fh() {
     eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')

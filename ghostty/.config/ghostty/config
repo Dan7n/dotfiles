@@ -1,6 +1,5 @@
 theme = dark:iceberg-dark,light:iceberg-light
 font-family = CaskaydiaCove Nerd Font
 font-size = 11 
-background-opacity = 0.95
+background-opacity = 1
 gtk-titlebar = false
-title = " "
