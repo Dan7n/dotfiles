@@ -33,6 +33,9 @@ alias hist='echo $(history 1 | cut -c 8- | fzf)'
 alias git-log='git log --all --decorate --oneline --graph'
 alias c='clear'
 alias deno='/Users/dannyisaac/.deno/bin/deno'
+alias python='python3'
+alias random_uuid=uuidgen
+alias cat='bat'
 
 alias cd='z' # replace the native cd command with zoxide which offers caching and fzf integration 
 alias ls="eza --icons=always --long --color=always" # replaces ls with eza, which is a better version
@@ -41,6 +44,7 @@ alias ...="cd ../.."
 alias ....="cd ../../.."
 alias zz="zellij"
 alias docker-stop-all="docker stop $(docker ps -a -q)"
+alias docker-kill="docker ps -aq | xargs docker rm -f"
 
 function fh() {
     eval $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
@@ -202,3 +206,8 @@ source ~/.keprc
 . "/Users/dannyisaac/.deno/env"
 
 fastfetch
+export PATH="$HOME/.dotnet/tools:$PATH"
+
+export PATH=$HOME/.local/bin:$PATH
+
+source ~/.environment_variables || true

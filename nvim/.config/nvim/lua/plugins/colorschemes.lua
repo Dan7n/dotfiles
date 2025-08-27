@@ -204,4 +204,5 @@ return {
   },
   { "yazeed1s/oh-lucy.nvim" },
   { "spaceduck-theme/nvim", name = "spaceduck" },
+  { "dgox16/oldworld.nvim" },
 }
